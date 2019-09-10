@@ -1,5 +1,7 @@
 package entities;
 
-public class Produto {
+public abstract class Produto {
+    private Double price;
     
+    public abstract void Pagamento();
 }
