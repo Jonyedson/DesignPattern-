@@ -2,22 +2,24 @@ package Application;
 
 import entities.LivroDigital;
 import entities.Produto;
-import entities.QuinzePorcent;
+import entities.PorcentQuinze;
+import entities.TabuleiroDigital;
 import java.util.Locale;
-import java.util.Scanner;
 
 public class Program {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+
         Produto product = new LivroDigital();
+        Produto product2 = new TabuleiroDigital();
         product.pagamentoAvista();
-        
-        product.setDesconto(new QuinzePorcent());
-        
+        product2.pagamentoAvista();
+        product.setDesconto(new PorcentQuinze());
+        product2.setDesconto(new PorcentQuinze());
         product.pagamentoAvista();
-        sc.close();
+        product2.pagamentoAvista();
+
     }
 
 }

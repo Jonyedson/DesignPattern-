@@ -1,6 +1,5 @@
 package entities;
 
-public abstract class JogoTabuleiro extends Jogo{
+public abstract class JogoTabuleiro extends Jogo {
 
-        
 }

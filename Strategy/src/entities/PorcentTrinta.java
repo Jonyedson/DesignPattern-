@@ -1,6 +1,6 @@
 package entities;
 
-public class TrintaPorcent implements Desconto{
+public class PorcentTrinta implements Desconto{
 
     @Override
     public Double desconto(Double price) {

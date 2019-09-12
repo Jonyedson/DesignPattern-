@@ -5,14 +5,6 @@ public abstract class Produto {
     protected Double price;
     protected Desconto desconto;
 
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
     public Desconto getDesconto() {
         return desconto;
     }
