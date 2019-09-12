@@ -2,5 +2,5 @@ package entities;
 
 public interface Desconto {
     
-    public void desconto();
+    public Double desconto(Double price);
 }

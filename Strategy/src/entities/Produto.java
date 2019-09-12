@@ -2,9 +2,14 @@ package entities;
 
 public abstract class Produto {
     protected Double price;
+    protected Desconto desconto;
     
-    public abstract void pagamentoAvista(Double price);
-    public abstract void pagamentoParcelado(Double Price);
+    public void pagamentoAvista(Double price){
+        
+    }
+    public void pagamentoParcelado(Double Price){
+        
+    }
     
     
 }

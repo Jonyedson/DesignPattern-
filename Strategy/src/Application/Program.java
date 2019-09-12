@@ -1,13 +1,19 @@
 package Application;
 
 import entities.Produto;
-import entities.VideoGameDigital;
+import entities.TabuleiroDigital;
+import java.util.Scanner;
 
 public class Program {
 
     public static void main(String[] args) {
-        VideoGameDigital vgd = new VideoGameDigital();
-        Produto product = vgd;
+        Scanner sc = new Scanner(System.in);
+        Produto product = new TabuleiroDigital();
+        
+        System.out.println("Digite um valor :");
+        double price = sc.nextDouble();
+        product.pagamentoAvista(price);
+        sc.close();
     }
 
 }

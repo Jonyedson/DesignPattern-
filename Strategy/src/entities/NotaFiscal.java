@@ -6,7 +6,8 @@ import java.util.List;
 
 public class NotaFiscal {
     List<Produto> product = new ArrayList<>();
-
+    
+    
     public List<Produto> getProduct() {
         return product;
     }

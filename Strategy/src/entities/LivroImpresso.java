@@ -5,7 +5,7 @@ public class LivroImpresso extends Livro {
     
     @Override
     public void pagamentoAvista(Double price) {
-        
+        this.price = price + price;
     }
 
     @Override
