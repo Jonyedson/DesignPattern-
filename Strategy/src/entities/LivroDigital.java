@@ -3,17 +3,14 @@ package entities;
 public class LivroDigital extends Livro {
 
     public LivroDigital() {
-    }
-
-    
-    @Override
-    public void pagamentoAvista(Double Price) {
-        
+        this.price = 100.00;
+        desconto = new TrintaPorcent();
     }
 
     @Override
-    public void pagamentoParcelado(Double Price) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void pagamentoAvista() {
+        System.out.println("Valor do produto: " + this.price);
+        System.out.println("Valor com desconto: " + (price - desconto.desconto(this.price)));
     }
-    
+
 }

@@ -4,7 +4,7 @@ public class TrintaPorcent implements Desconto{
 
     @Override
     public Double desconto(Double price) {
-        return price;
+        return 0.30 * price;
     }
     
 }

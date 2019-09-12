@@ -1,15 +1,28 @@
 package entities;
 
 public abstract class Produto {
+
     protected Double price;
     protected Desconto desconto;
-    
-    public void pagamentoAvista(Double price){
-        
+
+    public Double getPrice() {
+        return price;
     }
-    public void pagamentoParcelado(Double Price){
-        
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
-    
-    
+
+    public Desconto getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(Desconto desconto) {
+        this.desconto = desconto;
+    }
+
+    public void pagamentoAvista() {
+
+    }
+
 }
