@@ -7,11 +7,15 @@ public class VideoGameFisico extends JogoVideoGame {
         desconto = null;
     }
 
-    
     @Override
     public void pagamentoAvista() {
-        System.out.println("Valor do video game fisico: \n" + this.price);
-        System.out.println("Valor com desconto: \n" + (price - desconto.desconto(this.price)));
+        if (desconto != null) {
+            System.out.println("Valor do video game fisico: \n" + this.price);
+            System.out.println("Valor com desconto: \n" + (price - desconto.desconto(this.price)));
+        } else {
+            System.out.println("Valor do video game fisico: \n" + this.price);
+            System.out.println("Sem desconto no momento");
+        }
     }
 
 }
